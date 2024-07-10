@@ -1,9 +1,14 @@
-package aula20.exemploEncapsulamento;
+package aula21.heranca;
 
-public class Pessoa {
+public class Funcionario {
     private String nome;
     private String sobrenome;
-    private int idade;
+    private float salario;
+
+    public Funcionario(String nome, String sobrenome){
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+    }
 
     public String getNome() {
         return nome;
@@ -21,12 +26,11 @@ public class Pessoa {
         this.sobrenome = sobrenome;
     }
 
-    public int getIdade() {
-        return idade;
+    public float getSalario() {
+        return salario;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setSalario(float salario) {
+        this.salario = salario;
     }
 }
-
